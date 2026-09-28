@@ -125,7 +125,7 @@ struct DashboardView: View {
                 .padding(.horizontal)
             
             // Gasto de Ejemplo (Deslizable para borrar)
-            ExpenseCard(expense: Expense(id: UUID(), userId: UUID(), amount: 15.0, date: Date(), categoryId: nil, note: "Hamburguesa", origin: .manual, createdAt: Date()))
+            ExpenseCard(expense: Expense(id: UUID(), userId: UUID(), amount: Decimal(15), date: Date(), categoryId: nil, note: "Hamburguesa", origin: .manual, createdAt: Date()))
         }
     }
     
