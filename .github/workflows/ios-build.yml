@@ -38,6 +38,7 @@ jobs:
             -derivedDataPath ./build > build.log 2>&1 || true
           
       - name: Upload Build Log
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: Xcode-Build-Log
