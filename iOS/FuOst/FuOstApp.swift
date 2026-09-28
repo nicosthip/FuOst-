@@ -7,8 +7,13 @@ struct FuOstApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(supabaseService)
+            if supabaseService.currentUser == nil {
+                LoginView()
+                    .environmentObject(supabaseService)
+            } else {
+                MainTabView()
+                    .environmentObject(supabaseService)
+            }
         }
     }
 }
