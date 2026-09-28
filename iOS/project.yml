@@ -7,10 +7,15 @@ targets:
   FuOst:
     type: application
     platform: iOS
+    settings:
+      CODE_SIGNING_REQUIRED: "NO"
+      CODE_SIGNING_ALLOWED: "NO"
+      CODE_SIGN_IDENTITY: ""
     sources:
       - FuOst
     dependencies:
       - package: supabase-swift
+        product: Supabase
 packages:
   supabase-swift:
     url: https://github.com/supabase-community/supabase-swift.git

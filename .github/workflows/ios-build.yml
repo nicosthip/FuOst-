@@ -25,6 +25,7 @@ jobs:
       - name: Build App (Simulator/Unsigned)
         run: |
           cd iOS
+          xcodebuild -resolvePackageDependencies -project FuOst.xcodeproj
           # Compilar la aplicación sin firmar
           xcodebuild clean build \
             -project FuOst.xcodeproj \
