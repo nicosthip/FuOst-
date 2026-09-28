@@ -1,7 +1,6 @@
 name: FuOst
 options:
   bundleIdPrefix: com.nicvalb
-  xcodeVersion: "15.0"
   deploymentTarget:
     iOS: "17.0"
 targets:
